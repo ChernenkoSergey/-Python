@@ -31,7 +31,7 @@ markers = 'o*xvs'
 for i, marker in zip(range(num_clusters), markers):
     plt.scatter(X[labels==i, 0], X[labels==i, 1], marker=marker, color='black')
 
-# Код для построения центра текущего кластера
+    # Код для построения центра текущего кластера
     cluster_center = cluster_centers[i]
     plt.plot(cluster_center[0], cluster_center[1], marker='o',
             markerfacecolor='black', markeredgecolor='black',
